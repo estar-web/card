@@ -1,0 +1,16 @@
+@use "../global/" as *;
+@use "sass:math";
+@use "sass:map";
+
+.l-inner{
+  width: min(100%,$m-inner);
+  margin-inline: auto;
+
+  @include mq(l){
+    padding-inline: $padding-tab;
+  }
+
+  @include mq(s){
+    padding-inline: $padding-sp;
+  }
+}
